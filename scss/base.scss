@@ -1,0 +1,29 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+figure, ul {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+.cf {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}

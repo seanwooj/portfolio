@@ -1,0 +1,28 @@
+.h-line {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 1px;
+  right: 0;
+  background-color: $light-grey;
+  transition: right 1.5s linear;
+
+  &--1 {top: 360px;}
+  &--2 {top: 700px;}
+  &--3 {}
+}
+
+.v-line {
+  position: fixed;
+  z-index: -1;
+  width: 1px;
+  height: 100%;
+  background-color: $light-grey;
+  bottom: 100%;
+  top: 0;
+  transition: bottom 1.5s linear;
+
+  &--left { left: 58%; }
+  &--middle { left: 84%; }
+  &--right { left: 94%; }
+}

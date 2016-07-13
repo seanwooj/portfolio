@@ -1,0 +1,31 @@
+.top-header {
+  padding: 30px 0;
+  width: 100%;
+
+  .wrapper {
+    display: table;
+  }
+
+  .top-header__logo {
+    width: 60px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .site-nav {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    .site-nav__list {
+      list-style: none;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        a {
+          color: $black-body;
+          padding: 8px;
+        }
+      }
+    }
+  }
+}

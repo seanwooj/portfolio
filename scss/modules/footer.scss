@@ -1,0 +1,31 @@
+.site-footer {
+  margin-top: 60px;
+  border-top: 1px solid $light-grey;
+  .footer-contact {
+    padding: 100px 0 160px;
+    
+
+    .footer-contact__links {
+      list-style: none;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  .footer-extra-links {
+    float: right;
+    bottom: 0;
+    right: 0;
+    padding: 30px 100px;
+    display: inline-block;
+    background: $black-header;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: $header-font;
+      font-size: .5em;
+    }
+  }
+}

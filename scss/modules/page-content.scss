@@ -1,0 +1,94 @@
+.hero {
+  .hero__content {
+    padding: 70px 0 180px 0;
+    position: relative;
+    
+    .hero__content__container {
+      max-width: 500px;
+      width: 100%;
+      float: left;
+    }
+
+    .hero_skills {
+      float: left;
+      height: 100%;
+      .hero_skills__list {
+
+      }
+    }
+  }
+}
+
+
+.projects {
+  .projects__list {
+    list-style: none;
+    .projects__single {
+      width: 50%;
+      float: left;
+      position: relative;
+
+      &:hover {
+
+        .projects__single__info {
+          background: $background-black;
+
+          .projects__single__title {
+            opacity: 1;
+            transform: translate3d(0, 0, 0) scaleY(1);
+          }
+
+        }
+
+      }
+
+      picture {
+        & > * {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .projects__single__info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        text-align: center;
+        transition: $default-animation;
+
+        & > * {
+          position: absolute;
+          width: 80%;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0);
+        }
+
+        .projects__single__title {
+          opacity: 0;
+          transition: $linear-animation;
+          transform: translate3d(0, 0px, 0) scaleY(0);
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.project {
+  figure {
+    picture {
+      width: 100%;
+
+      & >  * {
+        width: 100%
+      }
+    }
+  }
+
+  .project__secondary-description {
+    padding: 100px 0 40px;
+  }
+}
